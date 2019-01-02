@@ -1,0 +1,176 @@
+#wrap {
+	box-sizing: border-box;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr;
+	grid-gap: 1rem;
+	-ms-grid-rows: 30px auto 30px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 30px auto 30px;
+	height: 99vh;
+	overflow: auto;
+	padding: 10px;
+	position: relative;
+}
+
+#wrap header {
+	-ms-grid-column: 1;
+	-ms-grid-row: 1;
+}
+
+.agenda {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr;
+	-ms-grid-row: 2;
+	-ms-grid-rows: auto;
+	grid-template-columns: 1fr;
+	padding-bottom: 80px;
+	width: 100%;
+}
+
+.agenda > * {
+	flex: 0 0 auto;
+}
+
+.day {
+	display: flex;
+	flex-direction: column;
+	margin-left: 0;
+	position: relative;
+}
+
+/* Explicit position for IE as it doesn't support auto flow */
+#sunday {
+	-ms-grid-column: 1;
+	-ms-grid-row: 1;
+}
+
+#monday {
+	-ms-grid-column: 1;
+	-ms-grid-row: 2;
+}
+
+#tuesday {
+	-ms-grid-column: 1;
+	-ms-grid-row: 3;
+}
+
+#wednesday {
+	-ms-grid-column: 1;
+	-ms-grid-row: 4;
+}
+
+#thursday {
+	-ms-grid-column: 1;
+	-ms-grid-row: 5;
+}
+
+@media ( --large-screen ) {
+	.agenda {
+		-ms-grid-columns: 1fr 1fr;
+		grid-template-columns: repeat( 2, 1fr );
+		padding-bottom: 40px;
+	}
+
+	.day {
+		margin-left: 10px;
+		-webkit-transform: initial;
+		transform: initial;
+		transition: transform 0.5s;
+	}
+
+	h2 {
+		float: initial;
+		width: 100%;
+	}
+
+	.day_sessions {
+		margin-left: 0;
+	}
+
+	.day:nth-child( odd ) {
+		margin-left: 0;
+	}
+
+	#sunday {
+		-ms-grid-column: 1;
+		-ms-grid-row: 1;
+	}
+
+	#monday {
+		-ms-grid-column: 2;
+		-ms-grid-row: 1;
+	}
+
+	#tuesday {
+		-ms-grid-column: 1;
+		-ms-grid-row: 2;
+	}
+
+	#wednesday {
+		-ms-grid-column: 2;
+		-ms-grid-row: 2;
+	}
+
+	#thursday {
+		-ms-grid-column: 1;
+		-ms-grid-row: 3;
+	}
+}
+
+@media ( --x-large-screen ) {
+
+	#wrap {
+		-ms-grid-rows: 50px auto 30px;
+		grid-template-rows: 50px auto 30px;
+	}
+
+	.agenda {
+		display: -ms-grid;
+		-ms-grid-columns: 1fr 1fr 1fr 2fr 1fr;
+		grid-template-columns: repeat( 3, 1fr ) 2fr 1fr;
+	}
+
+	h2 {
+		float: initial;
+		width: 100%;
+	}
+
+	.day_sessions {
+		margin-left: 0;
+	}
+
+	.day:nth-child( odd ) {
+		margin-left: 10px;
+	}
+
+	.day:first-child {
+		margin-left: 0;
+	}
+
+	#sunday {
+		-ms-grid-column: 1;
+		-ms-grid-row: 1;
+	}
+
+	#monday {
+		-ms-grid-column: 2;
+		-ms-grid-row: 1;
+	}
+
+	#tuesday {
+		-ms-grid-column: 3;
+		-ms-grid-row: 1;
+	}
+
+	#wednesday {
+		-ms-grid-column: 4;
+		-ms-grid-row: 1;
+	}
+
+	#thursday {
+		-ms-grid-column: 5;
+		-ms-grid-row: 1;
+	}
+}

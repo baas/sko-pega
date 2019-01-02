@@ -1,0 +1,149 @@
+html, body {
+	font-family: var( --font-text );
+	font-size: var( --font-base-size );
+	min-width: 320px;
+}
+
+a {
+	color: var( --color-link );
+	font-size: inherit;
+	text-decoration: none;
+}
+
+.link--darker {
+	color: var( --color-link-darker );
+}
+
+p, label, time {
+	background-color: inherit;
+}
+
+p, label {
+	font-size: 1.3rem;
+	margin-top: 5px;
+}
+
+label {
+	margin-right: 10px;
+}
+
+.logo {
+	height: 100%;
+}
+
+.title {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6{
+	background-color: var( --color-header-background );
+	color: var( --color-header );
+}
+
+h1 {
+	font-size: 1.4rem;
+	opacity: 0.75;
+}
+
+h2, h2 a {
+	font-size: 1.6rem;
+}
+
+h3 {
+	font-size: 1.4rem;
+}
+
+h4 {
+	font-size: 1.3rem;
+}
+
+h5 {
+	font-size: 1.2rem;
+}
+
+h6 {
+	font-size: 1rem;
+}
+
+@media ( --medium-screen ) {
+	h1 {
+		font-size: 2rem;
+	}
+}
+
+@media ( --large-screen ) {
+
+	h1 {
+		font-size: 2.6rem;
+		opacity: 0.75;
+	}
+
+	h2, h2 a {
+		font-size: 1.8rem;
+	}
+
+	h3 {
+		font-size: 1.4rem;
+	}
+
+	h4 {
+		font-size: 1.3rem;
+	}
+
+	h5 {
+		font-size: 1.2rem;
+	}
+
+	h6 {
+		font-size: 1rem;
+	}
+}
+
+.day_header {
+	background-color: #ffffff;
+	display: inline-block;
+	margin-top: 0;
+	padding: 5px 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.day_sessions {
+	border: 1px solid #cccccc;
+	display: flex;
+	flex: auto;
+	flex-direction: column;
+	list-style: none;
+	margin-bottom: 15px;
+	margin-top: 35px;
+	padding: 0;
+}
+
+@media ( --small-screen ) {
+	.day_header {
+		margin-top: 10px;
+		width: 100px;
+	}
+
+	.day_sessions {
+		margin-left: 110px;
+		margin-top: 10px;
+	}
+}
+
+@media ( --large-screen ) {
+	.day_header {
+		position: relative;
+		width: 100%;
+	}
+}
+
+@media ( --x-large-screen ) {
+	.day_header {
+		min-height: 35px;
+		padding: 5px 0 0;
+	}
+}

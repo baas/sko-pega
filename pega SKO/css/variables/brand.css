@@ -1,0 +1,23 @@
+:root {
+
+	/* Base */
+	--color-brand-1: #334d5c;
+	--color-brand-2: rgba( 69, 123, 154, 1 );
+	--color-brand-3: #efc94c;
+
+	/* Typography */
+	--color-header: #292f32;
+	--color-header-background: #ffffff;
+	--color-body: #4d575a;
+	--color-link: #005c9c;
+	--color-link-darker: #005c9c;
+
+	/* Session Colours */
+	--color-travel: #f9f0d2;
+	--color-cust: #b2dfdb;
+	--color-break: #dcd8d4;
+	--color-conf: #00796b;
+	--color-other: #474f68;
+	--color-mobile: #f5e6e6;
+	--color-user: #ddae25;
+}

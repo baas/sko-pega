@@ -1,0 +1,45 @@
+.icon {
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: inline-block;
+	height: 30px;
+	margin: 0 5px;
+	opacity: 0.5;
+	text-indent: -9999px;
+	width: 30px;
+}
+
+.icon--close {
+	background-image: url( '/assets/gfx/icons/close.svg' );
+	float: right;
+	height: 25px;
+	width: 15px;
+}
+
+.icon--break {
+	background-image: url( '/assets/gfx/icons/coffee.svg' );
+}
+
+.icon--conf {
+	background-image: url( '/assets/gfx/icons/resource-blog.svg' );
+}
+
+.icon--mobile {
+	background-image: url( '/assets/gfx/icons/product-mobile.svg' );
+}
+
+.icon--cust {
+	background-image: url( '/assets/gfx/icons/star.svg' );
+}
+
+.icon--travel {
+	background-image: url( '/assets/gfx/icons/aeroplane.svg' );
+}
+
+.icon--user {
+	background-image: url( '/assets/gfx/icons/people.svg' );
+}
+
+.icon--other {
+	background-image: url( '/assets/gfx/icons/help-circle.svg' );
+}

@@ -1,0 +1,7 @@
+:root {
+	--font-base-size: 62.5%;
+	--font-header: 'exo 2', 'roboto', sans-serif;
+	--font-text: 'exo 2', 'roboto light', sans-serif;
+	--font-weight: 300;
+	--line-height: 1.5;
+}

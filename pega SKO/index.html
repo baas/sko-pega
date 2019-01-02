@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pegasystems SKO 2019</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/gfx/pwa/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/gfx/pwa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/gfx/pwa/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-title" content="Pega GCLC">
+    <meta name="application-name" content="Pega GCLC">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-TileImage" content="assets/pwa/favicons/mstile-144x144.png">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link href="styles-login.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+    <div id="">
+        <div id="start-wrap">
+        
+         <h2 class="welcome-text">Welcome to the 2019</h2>
+         <h1 class="event-title">Sales Kick-off event</h1>
+         <div>
+         <!--  <input class="mail" id="emailentry" type="text"><button onclick="location.href='index.html';">Find your track</button> -->
+		 <form id="emailentry">
+		   <input class="mail" id="email" type="text"><button onclick="loginEmail()">Find your track</button>
+		 </form>
+         </div>
+
+        </div>
+    </div>
+</body>
+
+
+
+<noscript>
+            Please enable Javascript to view this page
+        </noscript>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="assets/js/lib/jquery-3.2.1.min.js">\x3C/script>')
+        </script>
+        <script src="assets/js/data.json"></script>
+        <script src="assets/js/skodata.json"></script>
+
+        <script type="text/javascript" src="login.js"></script>
+
+</html>

@@ -1,0 +1,9 @@
+.-u-fixed {
+	position: fixed;
+}
+
+@media ( --large-screen ) {
+	.-u-fixed {
+		position: relative;
+	}
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pegasystems SKO 2019</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/gfx/pwa/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/gfx/pwa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/gfx/pwa/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-title" content="Pega GCLC">
+    <meta name="application-name" content="Pega GCLC">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-TileImage" content="assets/pwa/favicons/mstile-144x144.png">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+    <div id="wrap">
+        <div id="wrap-content">
+            <header>
+                <img src="assets/gfx/pega-logo.svg" class="logo" alt="Pega GCLC 2018">
+                <h1 class="title">SKO 2019</h1>
+            </header>
+
+            <div class="filtero">
+                <div class="center" id="optionscontainer">
+                    <form id="emailentry">
+                        <input id="email" class="rounded-box" name='employeeemail'></input>
+                        <button id="filterSessions" class="button medium" onclick="submitEmail() ">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="agenda">
+
+
+                <!-- SUNDAY -->
+                <div class="day" id="sunday">
+
+                    <div class="track-head-sticky">
+                        <h2 class="day_header js-head-sunday ">
+                            <a href="#" class="day_header-link js-day-filter" data-day="sunday">Sunday</a>
+                            <a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Sunday Track">Close
+                                Sunday track</a>
+                        </h2>
+                    </div>
+
+                    <ul class="day_sessions">
+
+                        <div class="all-day">
+                            <span></span>
+                        </div>
+                        <!-- end track tabs -->
+
+                        <ol id="sessionListSun">
+                        </ol>
+                    </ul>
+                </div>
+
+                <!-- MONDAY -->
+                <div class="day" id="monday">
+                    <div class="track-head-sticky">
+                        <h2 class="day_header js-head-monday">
+                            <a href="#" class="day_header-link js-day-filter" data-day="monday">Monday</a>
+
+                            <a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Monday Track">Close Monday Track</a>
+                        </h2>
+                    </div>
+
+                    <ul class="day_sessions">
+                        <!-- track tabs -->
+                        <!-- <li class="multi-container stick-track">
+            <ul class="day_sessions multi-track track-head-container js-track-shrink js-track-default">
+              <li class="track-head js-btn-track" data-track="1">
+                <p>Tech</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="2">
+                <p>BA</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="3">
+                <p>EL</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="4">
+                <p>PL</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="5">
+                <p>XD</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="6">
+                <p>Dec</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+          </li> -->
+                        <div class="all-day">
+                            <span></span>
+                        </div>
+                        <!-- end track tabs -->
+                        <ol id="sessionListMon">
+                        </ol>
+                    </ul>
+                </div>
+
+                <!-- TUESDAY -->
+                <div class="day" id="tuesday">
+                    <div class="track-head-sticky">
+                        <h2 class="day_header js-head-tuesday">
+                            <a href="#" class="day_header-link js-day-filter" data-day="tuesday">Tuesday</a>
+                            <a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Tuesday Track">Close Tuesday Track</a>
+                        </h2>
+                    </div>
+
+                    <ul class="day_sessions">
+                        <!-- track tabs 
+          <li class="multi-container ">
+            <ul class="day_sessions multi-track track-head-container js-track-shrink js-track-default">
+              <li class="track-head js-btn-track" data-track="1">
+                <p>Tech</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="2">
+                <p>BA</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="3">
+                <p>EL</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="4">
+                <p>PL</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="5">
+                <p>XD</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+            <ul class="day_sessions multi-track track-head-container js-track-shrink">
+              <li class="track-head js-btn-track" data-track="6">
+                <p>Dec</p>
+                <span class="arrow"></span>
+              </li>
+            </ul>
+          </li>-->
+                        <div class="all-day">
+                            <span></span>
+                        </div>
+                        <!-- end track tabs -->
+
+                        <ol id="sessionListTue">
+                        </ol>
+                    </ul>
+                </div>
+
+                <!-- Wednesday -->
+                <div class="day" id="tuesday">
+                    <div class="track-head-sticky">
+                        <h2 class="day_header js-head-tuesday">
+                            <a href="#" class="day_header-link js-day-filter" data-day="tuesday">Wednesday</a>
+                            <a href="#" class="day_header-link day_header-link--close icon icon--close" aria-label="Close Tuesday Track">Close
+                                Wednesday Track</a>
+                        </h2>
+                    </div>
+
+                    <ul class="day_sessions">
+                        <!-- track tabs 
+                <li class="multi-container ">
+                  <ul class="day_sessions multi-track track-head-container js-track-shrink js-track-default">
+                    <li class="track-head js-btn-track" data-track="1">
+                      <p>Tech</p>
+                      <span class="arrow"></span>
+                    </li>
+                  </ul>
+                  <ul class="day_sessions multi-track track-head-container js-track-shrink">
+                    <li class="track-head js-btn-track" data-track="2">
+                      <p>BA</p>
+                      <span class="arrow"></span>
+                    </li>
+                  </ul>
+                  <ul class="day_sessions multi-track track-head-container js-track-shrink">
+                    <li class="track-head js-btn-track" data-track="3">
+                      <p>EL</p>
+                      <span class="arrow"></span>
+                    </li>
+                  </ul>
+                  <ul class="day_sessions multi-track track-head-container js-track-shrink">
+                    <li class="track-head js-btn-track" data-track="4">
+                      <p>PL</p>
+                      <span class="arrow"></span>
+                    </li>
+                  </ul>
+                  <ul class="day_sessions multi-track track-head-container js-track-shrink">
+                    <li class="track-head js-btn-track" data-track="5">
+                      <p>XD</p>
+                      <span class="arrow"></span>
+                    </li>
+                  </ul>
+                  <ul class="day_sessions multi-track track-head-container js-track-shrink">
+                    <li class="track-head js-btn-track" data-track="6">
+                      <p>Dec</p>
+                      <span class="arrow"></span>
+                    </li>
+                  </ul>
+                </li>-->
+                        <div class="all-day">
+                            <span></span>
+                        </div>
+                        <!-- end track tabs -->
+
+                        <ol id="sessionListWed">
+                        </ol>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="filter">
+                <form class="form">
+                    <div class="switch-field">
+                        <input type="radio" id="switch_3_left" class="js-day-selector" name="switch_3" value="all" checked />
+                        <label for="switch_3_left">All</label>
+                        <input type="radio" id="switch_3_center" class="js-day-selector" name="switch_3" value="sunday" />
+                        <label for="switch_3_center">Sun</label>
+                        <input type="radio" id="switch_3_right" class="js-day-selector" name="switch_3" value="monday" />
+                        <label for="switch_3_right">Mon</label>
+                        <input type="radio" id="switch_4_right" class="js-day-selector" name="switch_3" value="tuesday" />
+                        <label for="switch_4_right">Tue</label>
+                    </div>
+                </form>
+                <!--  <div class="filter-options">
+      <span role="button" aria-pressed="false" class="js-session-filter icon icon--conf" data-session="conf">Main
+          Conference</span>
+        <span role="button" aria-pressed="false" class="js-session-filter icon icon--cust" data-session="cust">Customer</span>
+        <span role="button" aria-pressed="false" class="js-session-filter icon icon--cust" data-session="user">Mobile</span>
+        <span role="button" aria-pressed="false" class="js-session-filter icon icon--user" data-session="mobile">User
+          Centered Design</span>
+        <span role="button" aria-pressed="false" class="js-session-filter icon icon--break" data-session="break">Breaks and
+          Meals</span>
+       <span role="button" aria-pressed="false" class="js-session-filter icon icon--travel" data-session="travel">Travel</span>
+        <span role="button" aria-pressed="false" class="js-session-filter icon icon--other" data-session="other">Other</span> 
+      </div> -->
+            </div>
+        </div>
+        <noscript>
+            Please enable Javascript to view this page
+        </noscript>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="assets/js/lib/jquery-3.2.1.min.js">\x3C/script>')
+        </script>
+        <script src="assets/js/data.json"></script>
+        <script src="assets/js/skodata.json"></script>
+
+        <script type="text/javascript" src="main.js"></script>
+    </div>
+</body>
+
+</html>
